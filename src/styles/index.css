@@ -1,0 +1,384 @@
+/* Mantener el CSS general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-size: 16px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+section {
+    height: 100vh; /* Cada sección ocupa toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    color: rgb(0, 0, 0);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 60px;
+    margin-right: 25px;
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+nav ul li {
+    position: relative;
+    font-size: 30px;
+}
+
+nav ul li a {
+    color: #ffd000;
+    text-decoration: none;
+    font-size: 36px;
+    padding: 5px 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #ffffff;
+    background-color: #ff1e00;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li a {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+#login-btn {
+    padding: 12px 25px;
+    background-color: #fff;
+    border: none;
+    color: #000000;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#login-btn:hover {
+    background-color: #e3f309;
+    color: #000000;
+}
+
+/* Estilos para las secciones */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    background-color: #ffd900; /* Fondo amarillo */
+    height: 100vh; /* Ocupar toda la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Ajusta el ancho de la sección */
+}
+
+.left-image {
+    width: 800px; /* Tamaño agrandado del logo */
+    height: auto;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.text-container {
+    max-width: 50%; /* Limita el tamaño del texto */
+    color: #000000; /* Color del texto */
+    text-align: center;
+    justify-content: center;
+    background-color: #fff; /* Asegura un fondo para que el box-shadow sea visible */
+    padding: 20px; /* Añade espacio interno */
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Sombra suave */
+}
+
+.text-container h2 {
+    font-size: 40px; /* Tamaño del título más grande */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.text-container p {
+    font-size: 38px; /* Tamaño de la fuente del texto */
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tarjeta,.seguridad {
+    padding: 40px 0;
+    background-color: #fff;
+    margin-bottom: 30px;
+    text-align: center; /* Centra el contenido */
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Organiza en columna */
+    align-items: center; /* Centra horizontalmente */
+    gap: 20px; /* Espacio entre el título y los botones */
+}
+
+.tarjeta h2,.seguridad h2 {
+    color: #000000;
+    font-size: 45px;
+}
+
+/* Ajuste del contenedor de botones */
+.buttons-container {
+    display: flex;
+    
+    gap: 15px; /* Espacio entre los botones */
+    align-items: center; /* Centra los botones horizontalmente */
+}
+/* Estilo de los botones */
+.buttons-container button {
+    background-color: #ffd900;
+    padding: 15px 30px; /* Botones más grandes */
+    font-size: 40px; /* Texto más grande en los botones */
+    border: none;
+    cursor: pointer;
+    border-radius: 8px; /* Bordes más redondeados */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+    margin-bottom: 20px; /* Espacio entre los botones */
+    width: 300px; /* Ancho fijo para todos los botones */
+    height: 300px;
+    text-align: center; /* Centra el texto dentro de los botones */
+    display: block;
+    
+}
+
+/* Fondo amarillo y estilos principales */
+.tarjeta-nequi {
+    background-color: #ffd900; /* Fondo amarillo */
+    padding: 40px;
+    color: #333;
+}
+
+/* Estilo del título principal */
+.tarjeta-nequi h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000; /* Texto en negro */
+}
+
+/* Contenedor de la información y la imagen */
+.tarjeta-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    gap: 30px;
+}
+
+/* Fondo amarillo y estilos principales */
+.tarjeta-nequi {
+    background-color: #ffd900; /* Fondo amarillo */
+    padding: 40px;
+    color: #333;
+    position: relative; /* Asegura que el contenido interno se posicione correctamente */
+}
+
+/* Estilo del título principal */
+.tarjeta-nequi h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000; /* Texto en negro */
+    position: absolute; /* Coloca el título en la parte superior */
+    top: 20px; /* Espacio desde la parte superior */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centrado */
+}
+
+/* Contenedor de la información y la imagen */
+.tarjeta-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    gap: 30px;
+    margin-top: 80px; /* Espacio debajo del título */
+}
+
+/* Estilo del contenido textual */
+.text-content {
+    flex: 1; /* Ocupa espacio disponible */
+}
+
+.tipo-tarjeta {
+    margin-bottom: 20px;
+}
+
+.tipo-tarjeta h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #000; /* Títulos en negro */
+}
+
+.tipo-tarjeta p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.tipo-tarjeta a {
+    color: #0000ee; /* Color azul para el enlace */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+/* Estilo de la imagen */
+.image-content {
+    flex: 0.5; /* Ocupa menos espacio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    max-width: 800px; /* Cambia este valor para agrandar el tamaño máximo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.preguntas {
+    background-color: #ffd900; /* Fondo amarillo */
+    padding: 40px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex;
+    flex-direction: column; /* Coloca todo en una columna */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto */
+    margin-top: 50px; /* Espacio entre esta sección y la anterior */
+}
+
+.preguntas h2 {
+    font-size: 60px; /* Tamaño del título */
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+.preguntas p {
+    font-size: 30px; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espaciado debajo del párrafo */
+}
+
+.preguntas ul {
+    list-style-type: none; /* Quita los puntos de las listas */
+    padding: 0; /* Quita el padding predeterminado */
+    margin: 0; /* Quita márgenes */
+    margin-bottom: 20px; /* Espaciado debajo de la lista */
+}
+
+.preguntas ul li {
+    font-size: 25px; /* Tamaño del texto de los elementos de la lista */
+    color: #333; /* Color del texto */
+    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+}
+
+.preguntas button {
+    background-color: #0c0c0c; /* Fondo del botón */
+    color: #fff; /* Texto blanco */
+    padding: 30px 50px; /* Tamaño del botón */
+    font-size: 25px; /* Tamaño del texto del botón */
+    border: none; /* Sin bordes */
+    border-radius: 15px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.preguntas button:hover {
+    background-color: #5a970b; /* Color al pasar el ratón */
+}
+
+.preguntas button a {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: #fff; /* Asegura que el enlace sea blanco dentro del botón */
+}
+
+
+
+
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}

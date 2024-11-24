@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATD LOGIN</title>
+    <link rel="stylesheet" href="/src/styles/login.css">
+    <link rel="icon" href="/src/imagenes/LogoCatd.png">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Formulario Sign-In -->
+        <div class="container-form">
+            <form class="sign-in">
+                <h1> ¡BIENVENIDOS! </h1>
+                <div class="socialnetworks">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </div>
+                <span>USE SU TELÉFONO, CÉDULA Y CONTRASEÑA</span>
+
+                <!-- Número de Teléfono -->
+                <div class="container-input">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <input type="tel" placeholder="Número de Teléfono" required>
+                </div>
+
+                <!-- Cédula -->
+                <div class="container-input">
+                    <ion-icon name="id-card-outline"></ion-icon>
+                    <input type="text" placeholder="Cédula" required>
+                </div>
+
+                <!-- Contraseña -->
+                <div class="container-input">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <button class="button"> INICIAR </button>
+            </form>
+        </div>
+
+        <!-- Formulario Sign-Up -->
+        <div class="container-form">
+            <form class="sign-up">
+                <h1> REGISTRARSE </h1>
+                <div class="socialnetworks">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </div>
+                <span> ¡VAMOS A REGISTRARNOS!</span>
+
+                <!-- Nombre Completo -->
+                <div class="container-input">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text" placeholder="Nombre Completo" required>
+                </div>
+
+                <!-- Cédula -->
+                <div class="container-input">
+                    <ion-icon name="id-card-outline"></ion-icon>
+                    <input type="text" placeholder="Cédula" required>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="container-input">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <input type="tel" placeholder="Teléfono" required>
+                </div>
+
+                <!-- Dirección -->
+                <div class="container-input">
+                    <ion-icon name="location-outline"></ion-icon>
+                    <input type="text" placeholder="Dirección" required>
+                </div>
+
+                <h4>Año de Nacimiento</h4>
+
+                <!-- Año de Nacimiento -->
+                <div class="container-input">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <input type="date" placeholder="Año de Nacimiento" required>
+                </div>
+
+                <h4>Fecha de Expedición de Cédula</h4>
+
+                <!-- Fecha de Expedición de Cédula -->
+                <div class="container-input">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <input type="date" placeholder="Fecha de Expedición de Cédula" required>
+                </div>
+
+                <!-- Contraseña (Solo números) -->
+                <div class="container-input">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="text" placeholder="Contraseña (Solo números)" pattern="\d*" required>
+                </div>
+
+                <!-- Correo -->
+                <div class="container-input">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" placeholder="Correo Electrónico" required>
+                </div>
+
+                <button class="button"> REGISTRARSE </button>
+            </form>
+        </div>
+
+        <div class="container-welcome">
+            <div class="welcome-sign-up welcome">
+                <h3>¡ÚNETE AHORA!</h3>
+                <p>¡Bienvenido a CATD! <br>Regístrate ahora y accede al mejor servicio bancario de todos. ¡Haz crecer tu dinero con nosotros!</p>
+                <button class="button" id="btn-sign-up">¡Registrarme!</button>
+            </div>
+            <div class="welcome-sign-in welcome">
+                <h3>¡ENTRA AL <br>MUNDO CATD!</h3>
+                <p>Inicia sesión con tus datos personales y empieza a realizar todos tus movimientos bancarios de forma rápida y segura.</p>
+                <button class="button" id="btn-sign-in">Iniciar Sesión</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/src/js/scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
