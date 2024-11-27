@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #efdd13;
+}
+
+
+header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.boton-salida {
+    background-color: red; /* Color de fondo rojo */
+    color: white;           /* Color del texto blanco */
+    border: none;           /* Eliminar borde */
+    padding: 10px 20px;     /* Espaciado interno */
+    font-size: 16px;        /* Tamaño de fuente */
+    cursor: pointer;       /* Aparece como cursor de mano al pasar por encima */
+    border-radius: 5px;     /* Bordes redondeados */
+}
+
+.boton-salida:hover {
+    background-color: darkred; /* Color rojo más oscuro al pasar el ratón */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+.hero-content {
+    flex: 1;
+}
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+.badge {
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+h1 {
+    font-size: 48px;
+    background: linear-gradient(to right, #3f51b5, #e91e63); /* Degradado de color */
+    -webkit-background-clip: text; /* Aplica el clip de fondo al texto */
+    background-clip: text; /* Propiedad estándar (no es compatible con todos los navegadores) */
+    -webkit-text-fill-color: transparent; /* Hace que el texto sea transparente para que el fondo sea visible */
+    margin-bottom: 20px;
+}
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.timeline {
+    background-image: url(/static/imagenes/Logo\ sin\ Fondo.png);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+}
+.timeline-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 40px;
+}
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 30px;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #3f51b5;
+}
+.values {
+    background-color: #fffde7;
+    padding: 60px 0;
+}
